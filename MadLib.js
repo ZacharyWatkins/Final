@@ -1,0 +1,49 @@
+var first;
+var second;
+var third;
+var fourth;
+var fifth;
+var sixth;
+function Story1() {
+  first = document.getElementById("1").value;
+  second = document.getElementById("2").value;
+  third = document.getElementById("3").value;
+  fourth = document.getElementById("4").value;
+  fifth = document.getElementById("5").value;
+  if (isNaN(first || second || third || fourth || fifth)) {
+    //page one
+    setCookie("one",first);
+    setCookie("two",second);
+    setCookie("three",third);
+    setCookie("four",fourth);
+    setCookie("five",fifth);
+  }
+}
+function NextPage() {
+
+}
+
+//page two
+setCookie("six",sixth);
+//courtesy of w3schools, from http://www.w3schools.com/js/js_cookies.asp
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+//courtesy of w3schools, from http://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}

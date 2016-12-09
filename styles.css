@@ -1,0 +1,38 @@
+input:hover {
+    background-color: yellow;
+}
+body {
+  background-color: skyblue;
+}
+.choice {
+  background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+.right {
+  align-items: center;
+  padding-top: 50px;
+}
+p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    text-align: center;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: #0d0d0d
+}
+h1 {
+  text-align: center;
+  font-family: Georgia, Times, serif;
+  color: #0d0d0d
+}
+img {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
