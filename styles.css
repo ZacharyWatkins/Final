@@ -25,6 +25,9 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
     color: #0d0d0d
 }
+.list {
+  font-size: 250%;
+}
 h1 {
   text-align: center;
   font-family: Georgia, Times, serif;

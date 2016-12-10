@@ -4,6 +4,7 @@ var third;
 var fourth;
 var fifth;
 var sixth;
+var CompleteList = [];
 function Story1() {
   first = document.getElementById("1").value;
   second = document.getElementById("2").value;
@@ -11,6 +12,7 @@ function Story1() {
   fourth = document.getElementById("4").value;
   fifth = document.getElementById("5").value;
   if (isNaN(first || second || third || fourth)) {
+    CompleteList.push(first || second || third || forth);
     //page one
     setCookie("one",first);
     setCookie("two",second);
@@ -22,7 +24,9 @@ function Story1() {
   }
   else {
     setCookie("five",fifth);
+    CompleteList.push(fifth);
   }
+  setCookie("Picks",CompleteList.toString());
 }
 function NextPage() {
   var part1 = getCookie("one");
@@ -35,7 +39,7 @@ function NextPage() {
   document.getElementById("answer3").innerHTML = part3;
   document.getElementById("answer4").innerHTML = part4;
   document.getElementById("answer5").innerHTML = part5;
-  console.log(part1);
+  document.getElementById("ShowList").innerHTML = CompleteList;
 }
 
 //page two
