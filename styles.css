@@ -13,7 +13,7 @@ body {
       display: inline-block;
   }
 .right {
-  align-items: center;
+  align-items: right;
   padding-top: 50px;
 }
 .story {
