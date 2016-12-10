@@ -16,7 +16,7 @@ body {
   align-items: center;
   padding-top: 50px;
 }
-#story {
+.story {
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
