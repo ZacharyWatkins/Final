@@ -12,7 +12,10 @@ function Story1() {
   fourth = document.getElementById("4").value;
   fifth = document.getElementById("5").value;
   if (isNaN(first || second || third || fourth)) {
-    CompleteList.push(first || second || third || forth);
+    CompleteList.push(first);
+    CompleteList.push(second);
+    CompleteList.push(third);
+    CompleteList.push(fourth);
     //page one
     setCookie("one",first);
     setCookie("two",second);
