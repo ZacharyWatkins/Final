@@ -34,6 +34,7 @@ function NextPage() {
   var part3 = getCookie("three");
   var part4 = getCookie("four");
   var part5 = getCookie("five");
+  CompleteList = getCookie("Picks");
   document.getElementById("answer1").innerHTML = part1;
   document.getElementById("answer2").innerHTML = part2;
   document.getElementById("answer3").innerHTML = part3;
