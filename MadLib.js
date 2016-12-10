@@ -10,17 +10,32 @@ function Story1() {
   third = document.getElementById("3").value;
   fourth = document.getElementById("4").value;
   fifth = document.getElementById("5").value;
-  if (isNaN(first || second || third || fourth || fifth)) {
+  if (isNaN(first || second || third || fourth)) {
     //page one
     setCookie("one",first);
     setCookie("two",second);
     setCookie("three",third);
     setCookie("four",fourth);
+  }
+  if (isNaN(fifth)) {
+    window.alert("Please Enter a Number for Five")
+  }
+  else {
     setCookie("five",fifth);
   }
 }
 function NextPage() {
-
+  var part1 = getCookie("one");
+  var part2 = getCookie("two");
+  var part3 = getCookie("three");
+  var part4 = getCookie("four");
+  var part5 = getCookie("five");
+  document.getElementById("answer1").innerHTML = part1;
+  document.getElementById("answer2").innerHTML = part2;
+  document.getElementById("answer3").innerHTML = part3;
+  document.getElementById("answer4").innerHTML = part4;
+  document.getElementById("answer5").innerHTML = part5;
+  console.log(part1);
 }
 
 //page two

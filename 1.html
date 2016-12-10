@@ -6,17 +6,13 @@
    <title>Mad Libs</title>
    <script type="text/javascript" src="MadLib.js"></script>
  </head>
-  <body>
+  <body onload="NextPage()">
     <div style="width: 100%">
       <div style="float: left; width:35%">
        <h1>Your Story</h1>
        <p>
-         <br>
-         Enter: <input type="text" id="1" class="choice" placeholder="noun" /> <br>
-         Enter: <input type="text" id="2" class="choice" placeholder="adjective" /> <br>
-         Enter: <input type="text" id="3" class="choice" placeholder="verb" /> <br>
-         Enter: <input type="text" id="4" class="choice" placeholder="noun" /> <br>
-         Enter: <input type="text" id="5" class="choice" placeholder="noun" /> <br>
+         A man walks into a <i id="answer1">""</i> class. He <i id="answer2">""</i> to the front of the class and sits down. The <i id="answer3">""</i>
+         teacher comes in and decides to have a pop quiz on <i id="answer4">""</i>. The man score a <i id="answer5">""</i>/100.
          <button type="button" href="1.html" onclick="Story();">
            Create Story
          </button>
