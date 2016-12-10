@@ -26,9 +26,6 @@ function Story1() {
     setCookie("three",third);
     setCookie("four",fourth);
   }
-  else {
-    window.alert(Must Not Be Numbers)
-  }
   if (isNaN(fifth)) {
     window.alert("Please Enter a Number for Five")
   }
@@ -68,9 +65,6 @@ function Story2() {
     setCookie("seven",seventh);
     setCookie("eight",eighth);
     setCookie("nine",ninth);
-  }
-  else {
-    window.alert(Must Not Be Numbers)
   }
   if (isNaN(tenth)) {
     window.alert("Please Enter a Number for Fifth Entry")
