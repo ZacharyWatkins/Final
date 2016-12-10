@@ -43,7 +43,7 @@ function NextPage() {
   document.getElementById("answer3").innerHTML = part3;
   document.getElementById("answer4").innerHTML = part4;
   document.getElementById("answer5").innerHTML = part5;
-  document.getElementById("ShowList").innerHTML = CompleteList;
+  document.getElementById("ShowList").innerHTML = getCookie("Picks");
 }
 
 //page two
